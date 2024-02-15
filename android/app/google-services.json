@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "879409420086",
+    "project_id": "citiguide-2ea91",
+    "storage_bucket": "citiguide-2ea91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879409420086:android:657fa85ab10ca61edc4597",
+        "android_client_info": {
+          "package_name": "com.citi.citiguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbyxR5vvsWL2PeNLRF5xuYNm4ZslpeJ4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
