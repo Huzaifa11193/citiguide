@@ -14,6 +14,7 @@ dependencies:
   firebase_database:
   custom_searchable_dropdown: ^2.1.1
   url_launcher: ^6.2.3
+  accordion: ^2.6.0
   flutter:
     sdk: flutter
 
@@ -21,6 +22,22 @@ dev_dependencies:
   flutter_lints: 3.0.1
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^2.2.16
+  flutter_launcher_icons: ^0.11.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter_native_splash:
+  color: "#E4F1FC"
+  image: assets/logos/splash_screen_logo.png
+  android_12:
+    image: assets/logos/splash_screen_logo.png
+
+  android: true
+  ios: true
 
 flutter:
   uses-material-design: true

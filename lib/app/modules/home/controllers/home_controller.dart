@@ -34,7 +34,7 @@ class HomeController extends GetxController {
 
   void signout() {
     FirebaseAuth.instance.signOut();
-    Get.toNamed('/login');
+     Get.offNamed('/login');
   }
 
   Future<void> fetchDataFromDatabase() async {

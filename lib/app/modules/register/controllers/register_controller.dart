@@ -7,7 +7,8 @@ class RegisterController extends GetxController {
 
   late TextEditingController emailAddress = new TextEditingController();
   late  TextEditingController password = new TextEditingController();
-  final RegisterformKey = GlobalKey<FormState>();
+
+final List<GlobalObjectKey<FormState>> RegisterformKey = List.generate(10, (index) => GlobalObjectKey<FormState>(index));
 
   final count = 0.obs;
   @override

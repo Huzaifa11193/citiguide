@@ -2,6 +2,12 @@ import 'package:get/get.dart';
 
 import '../modules/addreview/bindings/addreview_binding.dart';
 import '../modules/addreview/views/addreview_view.dart';
+import '../modules/admincity/bindings/admincity_binding.dart';
+import '../modules/admincity/views/admincity_view.dart';
+import '../modules/adminplaces/bindings/adminplaces_binding.dart';
+import '../modules/adminplaces/views/adminplaces_view.dart';
+import '../modules/adminsetting/bindings/adminsetting_binding.dart';
+import '../modules/adminsetting/views/adminsetting_view.dart';
 import '../modules/changepassword/bindings/changepassword_binding.dart';
 import '../modules/changepassword/views/changepassword_view.dart';
 import '../modules/detail/bindings/detail_binding.dart';
@@ -51,6 +57,21 @@ class AppPages {
       name: _Paths.ADDREVIEW,
       page: () => const AddreviewView(),
       binding: AddreviewBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMINCITY,
+      page: () => const AdmincityView(),
+      binding: AdmincityBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMINPLACES,
+      page: () => const AdminplacesView(),
+      binding: AdminplacesBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMINSETTING,
+      page: () => const AdminsettingView(),
+      binding: AdminsettingBinding(),
     ),
   ];
 }
