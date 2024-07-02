@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-
 class ButtonWithIcon extends StatelessWidget {
-  const ButtonWithIcon({super.key,
-    required this.text,
-    required this.onPressed,
-    required this.width,
-    required this.height,
-    required this.buttontextsize,
-    required this.icon
-  });
+  const ButtonWithIcon(
+      {super.key,
+      required this.text,
+      required this.onPressed,
+      required this.width,
+      required this.height,
+      required this.buttontextsize,
+      required this.icon});
 
-    final String text;
+  final String text;
   final Function() onPressed;
   final double width;
   final double height;
@@ -20,33 +19,31 @@ class ButtonWithIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-       return Container(
+    return Container(
       width: this.width,
-      height:   this.height,
+      height: this.height,
       decoration: BoxDecoration(
         border: Border.all(color: Colors.white),
         color: Colors.blue,
         borderRadius: BorderRadius.circular(30.0),
       ),
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          primary: Colors
-              .transparent, // Set the button's background color to transparent
-          onPrimary: Colors.white, // Change this to the text color you prefer
-          elevation: 0, // You can adjust the elevation as needed
-          minimumSize: Size(double.infinity, 50),
-          textStyle: TextStyle(fontSize: 18),
-        ),
-        onPressed: () {
-          onPressed();
-        },
-        child: Text(this.text,
-        style: TextStyle(
-            fontSize: this.buttontextsize,
-            color: Colors.white,
-            ))
-      ),
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor:
+                Colors.transparent, // Change this to the text color you prefer
+            elevation: 0, // You can adjust the elevation as needed
+            minimumSize: Size(double.infinity, 50),
+            textStyle: TextStyle(fontSize: 18),
+          ),
+          onPressed: () {
+            onPressed();
+          },
+          child: Text(this.text,
+              style: TextStyle(
+                fontSize: this.buttontextsize,
+                color: Colors.white,
+              ))),
     );
- 
   }
 }
